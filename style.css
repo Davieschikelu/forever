@@ -1,0 +1,723 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: flex;
+    src: url(fonts/flexslider-icon.woff);
+}
+@font-face {
+    font-family: tello;
+    src: url(fonts/fontello.woff);
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+
+.container1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/slide-image-1920-c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+/* .fixed{
+    background-color: transparent;
+    width: 100%;
+position: fixed;
+top: 35px;
+} */
+ 
+nav{ 
+   margin: auto;
+    width: 75%;
+    position: absolute;
+top: 60px;
+height: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav a{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav a:hover{
+    color: red;
+}
+.round{
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    background-color: #F0394D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.round strong{
+    color: white;
+      font-family: tello;
+      font-size: .8rempx;
+}
+.fa-solid{
+    font-size: .8rem;
+}
+
+/*navend*/
+
+.content{
+    align-self: center;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Courgette", serif;
+  font-weight: 400;
+  font-style: normal;
+   margin-top: 85px;
+    flex-direction: column;
+}
+.cont{
+    transform: rotate(-10deg);
+}
+.dot{
+    color: #F0394D;
+}
+.content-foot{
+    text-transform: uppercase;
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    border-top: .5px solid white;
+    border-bottom: .5px solid white;
+    letter-spacing: 2px;
+}
+.content-foot2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.doom .fa-solid{
+font-size: 1rem;
+
+}
+.dom{
+    position: relative;
+    right: -5px;
+    z-index: 1;
+}
+.white{
+    position: relative;
+    right: 5px;
+
+}
+
+/*container end*/
+.section1{
+    background-color: white;
+  padding: 150px 0 150px 0;
+}
+.sect1-1{
+margin: auto;
+width: 75%;
+text-align: center;
+}
+.sect1-1 h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.4rem;
+font-weight: 400;
+font-style: normal;
+}
+.sect1-1 p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .9rem;
+margin-top: 18px;
+color: #868686;
+margin-bottom: 30px;
+}
+.zoom{
+    width: 30px;
+    height: 8px;
+    display: inline-block;
+    border-top: solid 2px #e1dddd;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 50px;
+}
+.grid-item{
+    background-color: #F0394D;
+    height: 450px;
+}
+.bg1{
+    background-image: url(images/him2.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+.bg2{
+    background-image: url(images/her2.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+.border{
+width: 100%;
+height: 416px;
+border: 1px solid white;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.foot{
+color: white;
+        text-transform: uppercase;
+        margin-top: 290px;
+        margin-bottom: 0;
+        display: flex;
+        gap: 5px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.3rem;
+        border-top: .5px solid white;
+        border-bottom: .5px solid white;
+        letter-spacing: 2px;
+    
+}
+.foot p{
+    color: white !important;
+}
+.grid-item p{
+    font-family: flex;
+    font-size: 1rem;
+    color: #959494;
+    text-align: left;
+    font-weight: 500;
+}
+.rem{
+    color: #5c5c5c;
+}
+.backatt{
+    height: 520px;
+    width: 100%;
+    background-image: url(images/parallax-image-1a.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay{
+    height: 520px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.365);
+    display: flex;
+    align-items: center;
+}
+.over{
+    margin: auto;
+    width: 56%;
+}
+.content-foot p{
+    color: white !important;
+}
+.content-foot span{
+    color: white !important;
+}
+.fin{
+    text-align: center;
+}
+
+.wedd{
+    
+    width: 100%;
+    background-color: #f1eeee;
+    padding: 150px 0 150px 0;
+}
+.sect1-2{
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    }
+    .sect1-2 h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2.4rem;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .sect1-2 p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: .9rem;
+    margin-top: 18px;
+    color: #868686;
+    margin-bottom: 30px;
+    }
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+    margin-top: 50px;
+    }
+    .grid-item2{
+        height: 430px;
+        background-color: white;
+    }
+    .grid22{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 30px;
+        padding-top: 30px;
+    }
+    .grid22 h2{
+        font-size: 1.3rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+    }
+    .grid22 p{
+        font-family: flex;
+        font-size: 1rem;
+        color: #959494;
+        text-align: left;
+        font-weight: 500;
+    }
+    .bg3{
+        background-image: url(images/the-wedding-1a.jpg);
+        height: 240px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 7px;
+    }
+    .bg4{
+        background-image: url(images/the-wedding-4a.jpg);
+        height: 240px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 7px;
+    }
+    .bg5{
+        background-image: url(images/accomodation.jpg);
+        height: 240px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 7px;
+    }
+    .border2{
+        width: 100%;
+        height: 225px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        }
+        .loww{
+            padding: 150px 0 150px 0;
+            width: 100%;
+        }
+        .backatt2{
+            height: 520px;
+            width: 100%;
+            background-image: url(images/slide-image-1920-h.jpg);
+            background-attachment: fixed;
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .sect1-3{
+            height: 240px;
+            margin: auto;
+            width: 75%;
+            text-align: center;
+            line-height: 30px;
+        }
+        
+            .sect1-3 h1{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 2.4rem;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 30px;
+            }
+            .sect1-3 p{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: .9rem;
+            margin-top: 25px;
+            color: #868686;
+            margin-bottom: 30px;
+            }
+            .sect1-3 button{
+                width: 150px;
+                height: 50px;
+                font-size: 15px;
+                background-color: transparent;
+                border: .5px solid black;
+            }
+            .content- p{
+                color: white !important;
+                margin-top: 25px;
+                font-size: 1.3rem;
+            }
+            .dem{
+                margin-top: 20px;
+            }
+/*gallery*/
+.container2{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+}
+ .zam a{
+    color: #5c5c5c !important;
+ }
+
+ .zam a:hover{
+    color: red !important;
+}
+.backatt3{
+    height: 490px;
+    width: 100%;
+    background-image: url(images/footer-image-5.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay1{
+    height: 490px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.365);
+    display: flex;
+    align-items: center;
+}
+.wedd2{
+    margin-top: 120px;
+    z-index: -1;
+    width: 100%;
+    background-color: #f4f1f1;
+    padding: 150px 0 150px 0;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+margin-top: 50px;
+}
+.grid-item3{
+    height: 290px;
+    background-color: white;
+}
+
+.bg6{
+    background-image: url(images/gallery-1.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+.bg7{
+    background-image: url(images/gallery-2.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+.bg8{
+    background-image: url(images/gallery-3.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+
+.bg9{
+    background-image: url(images/gallery-4.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+.bg10{
+    background-image: url(images/gallery-5.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+.bg11{
+    background-image: url(images/gallery-6.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+
+.bg12{
+    background-image: url(images/gallery-7.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+.bg13{
+    background-image: url(images/gallery-8.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+.bg14{
+    background-image: url(images/gallery-9.jpg);
+    height: 290px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7px;
+}
+
+/*the story*/
+
+.backatt4{
+    margin-top: 120px;
+    height: 590px;
+    width: 100%;
+    background-image: url(images/the-story-1920-a.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay-w{
+    height: 590px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.365);
+    display: flex;
+    align-items: center;
+}
+.over{
+    margin: auto;
+    width: 56%;
+}
+.backatt3-1{
+    height: 490px;
+    width: 100%;
+    background-image: url(images/slide-image-1920-c.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-d{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 50px !important;
+    margin: auto;
+    width: 85%;
+}
+.grid-i{
+    height: 150px;
+}
+.grid-i p{
+    color: #959494;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+.section-1{
+    background-color: white;
+  padding: 150px 0 150px 0;
+}
+.round2{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: .5px solid white;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.round2 .fa-solid{
+    font-size: 2.3rem;
+}
+.sect1-5{
+    height: 390px;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    line-height: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    .sect1-5 h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2.3rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 30px;
+    }
+    .sect1-5 p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: .9rem;
+    margin-top: 25px;
+    color: #fefefe;
+    
+    }
+    
+    .backatt-4{
+        margin-top: 120px;
+        height: 590px;
+        width: 100%;
+        background-image: url(images/the-story-1920-b.jpg);
+        background-attachment: fixed;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+.zam-um{
+    margin: auto;
+    width: 85%;
+}
+    .bh2{
+        margin-top: 120px;
+        height: 520px;
+        width: 100%;
+        background-image: url(images/the-story-hugged-him-a.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sect1-f{
+        height: 100px;
+        margin: auto;
+        width: 75%;
+        text-align: center;
+        line-height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px !important;
+    }
+    
+        .sect1-f h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 2.3rem;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 30px;
+        
+        margin-bottom: 30px;
+        }
+    .yes{
+        color: red !important;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2.3rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+    /*the wedding*/
+
+    .sect1-5 button{
+        width: 190px;
+        height: 45px;
+        font-size: 17px;
+        background-color: transparent;
+        border: .5px solid white;
+        color: white;
+    }
+
+    .backattr4{
+        margin-top: 120px;
+        height: 460px;
+        width: 100%;
+        background-image: url(images/location-1920.jpg);
+        background-attachment: fixed;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .overlay-wr{
+        height: 460px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.365);
+        display: flex;
+        align-items: center;
+    }
+    .over2-1{
+        margin: auto;
+        width: 56%;
+        padding: 130px 0 150px 0;
+}
+.line{
+    line-height: 50px !important;
+    height: 260px !important;
+}
+.h12{
+    font-size: 2.7rem !important;
+}
+
+/*test*/
+.row::after{
+content: "";
+display: table;
+clear: both;
+}
+.col{
+    width: 24%;
+    height: 300px;
+   
+    float: left;
+}
+.ml{
+    margin-left: 10px;
+}
+.g{
+    background-color: green;
+}
+.y{
+    background-color: yellow;
+}
+.b{
+   background-color:  brown;
+}
+.r{
+    background-color: red;
+}
